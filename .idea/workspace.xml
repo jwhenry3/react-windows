@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9908bc3b-ab6c-49fc-9924-6bd82a010a99" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="ProjectId" id="1gy4MWz6bsmIqPnh5Bfxb1VoE6I" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -10,5 +22,28 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\jwhen\react-windows\node_modules\prettier" />
     <property name="ts.external.directory.path" value="C:\Users\jwhen\react-windows\node_modules\typescript\lib" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9908bc3b-ab6c-49fc-9924-6bd82a010a99" name="Default Changelist" comment="" />
+      <created>1599073450365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599073450365</updated>
+      <workItem from="1599073453217" duration="4537000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="4463" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599077059011">
+      <screen x="3840" y="0" width="1920" height="1040" />
+    </state>
+    <state x="4463" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040/3840.0.1920.1040@3840.0.1920.1040" timestamp="1599077059011" />
   </component>
 </project>
