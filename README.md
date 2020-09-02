@@ -15,13 +15,17 @@ npm install --save react-windows
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-windows'
-import 'react-windows/dist/index.css'
+import {Panel, Panels, setComponent} from 'react-windows';
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+export default MyComponent extends React.Component {
+
+    componentDidMount() {
+        setComponent('test', <Panel>{(focused) => <div>Content</div>}</Panel>);
+    }
+
+    render() {
+        return <Panels/>;
+    }
 }
 ```
 

@@ -183,31 +183,12 @@ class Panel extends Component<PanelProps, PanelState> {
 
   render() {
     if (!this.props.canDrag) {
-      return <>
-        <div ref={this.onRef}
-             className={'panel ' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
-             style={this.getStyle()}>
-          <div className="panel-container" onMouseDown={this.focus}>
-            <div className={'panel-top ' + (this.props.title ? 'title' : '')}>
-              <div className="left">
-              </div>
-              <div className="title">{this.props.title}</div>
-              <div className="right">
-                {this.renderClose()}
-              </div>
-            </div>
-            {typeof this.props.children === 'function' ? (this.props.children as ChildFunction)(!!this.props.focused) : this.props.children}
-          </div>
-        </div>
-      </>
-    }
-    return <>
-      <div ref={this.onRef} className={'panel ' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
-           style={this.getStyle()}>
+      return <div ref={this.onRef}
+                  className={'panel ' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
+                  style={this.getStyle()}>
         <div className="panel-container" onMouseDown={this.focus}>
-          <div className={'panel-top ' + (this.props.title ? 'title' : '')} onMouseDown={this.onMouseDown}>
+          <div className={'panel-top ' + (this.props.title ? 'title' : '')}>
             <div className="left">
-              <IconButton><OpenWith/></IconButton>
             </div>
             <div className="title">{this.props.title}</div>
             <div className="right">
@@ -217,7 +198,23 @@ class Panel extends Component<PanelProps, PanelState> {
           {typeof this.props.children === 'function' ? (this.props.children as ChildFunction)(!!this.props.focused) : this.props.children}
         </div>
       </div>
-    </>
+    }
+    return <div ref={this.onRef}
+                className={'panel ' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
+                style={this.getStyle()}>
+      <div className="panel-container" onMouseDown={this.focus}>
+        <div className={'panel-top ' + (this.props.title ? 'title' : '')} onMouseDown={this.onMouseDown}>
+          <div className="left">
+            <IconButton><OpenWith/></IconButton>
+          </div>
+          <div className="title">{this.props.title}</div>
+          <div className="right">
+            {this.renderClose()}
+          </div>
+        </div>
+        {typeof this.props.children === 'function' ? (this.props.children as ChildFunction)(!!this.props.focused) : this.props.children}
+      </div>
+    </div>
   }
 }
 
