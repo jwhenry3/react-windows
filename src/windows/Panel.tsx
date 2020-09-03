@@ -170,7 +170,7 @@ class Panel extends Component<PanelProps, PanelState> {
 
   renderClose() {
     if (this.props.close) {
-      return <IconButton onClick={this.props.close}><Close/></IconButton>
+      return <IconButton className={styles['MuiIconButton-root']} onClick={this.props.close}><Close/></IconButton>
     }
     return ''
   }
