@@ -15,7 +15,7 @@ npm install --save react-windows
 ```tsx
 import React, { Component } from 'react'
 
-import {Panel, Panels, setComponent} from 'react-windows';
+import {Panel, Panels, setComponent} from '@jwhenry/react-windows';
 
 export default MyComponent extends React.Component {
 
