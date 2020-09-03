@@ -1,5 +1,5 @@
 import React, { Component, ReactNode, useEffect, useState }      from 'react'
-import styles                                                    from './Panel.scss'
+import styles                                                    from './Panel.css'
 import { IconButton }                                            from '@material-ui/core'
 import { Close, OpenWith }                                       from '@material-ui/icons'
 import { focusComponent, getFocusedComponent, updateComponents } from './components'
