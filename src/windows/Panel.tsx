@@ -1,5 +1,5 @@
 import React, { Component, ReactNode, useEffect, useState }      from 'react'
-import './Panel.scss'
+import styles                                                    from './Panel.scss'
 import { IconButton }                                            from '@material-ui/core'
 import { Close, OpenWith }                                       from '@material-ui/icons'
 import { focusComponent, getFocusedComponent, updateComponents } from './components'
@@ -184,14 +184,14 @@ class Panel extends Component<PanelProps, PanelState> {
   render() {
     if (!this.props.canDrag) {
       return <div ref={this.onRef}
-                  className={'panel ' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
+                  className={styles.panel + ' panel' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
                   style={this.getStyle()}>
-        <div className="panel-container" onMouseDown={this.focus}>
-          <div className={'panel-top ' + (this.props.title ? 'title' : '')}>
-            <div className="left">
+        <div className={styles.panelContainer + ' panel-container'} onMouseDown={this.focus}>
+          <div className={styles.panelTop + ' panel-top ' + (this.props.title ? 'title' : '')}>
+            <div className={styles.left + ' left'}>
             </div>
-            <div className="title">{this.props.title}</div>
-            <div className="right">
+            <div className={styles.title + ' title'}>{this.props.title}</div>
+            <div className={styles.right + ' right'}>
               {this.renderClose()}
             </div>
           </div>
@@ -200,15 +200,16 @@ class Panel extends Component<PanelProps, PanelState> {
       </div>
     }
     return <div ref={this.onRef}
-                className={'panel ' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
+                className={styles.panel + ' panel' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
                 style={this.getStyle()}>
-      <div className="panel-container" onMouseDown={this.focus}>
-        <div className={'panel-top ' + (this.props.title ? 'title' : '')} onMouseDown={this.onMouseDown}>
-          <div className="left">
+      <div className={styles.panelContainer + ' panel-container'} onMouseDown={this.focus}>
+        <div className={styles.panelTop + ' panel-top ' + (this.props.title ? 'title' : '')}
+             onMouseDown={this.onMouseDown}>
+          <div className={styles.left + ' left'}>
             <IconButton><OpenWith/></IconButton>
           </div>
-          <div className="title">{this.props.title}</div>
-          <div className="right">
+          <div className={styles.title + ' title'}>{this.props.title}</div>
+          <div className={styles.right + ' right'}>
             {this.renderClose()}
           </div>
         </div>

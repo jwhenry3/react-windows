@@ -1,6 +1,6 @@
 {
   "name": "@jwhenry/react-windows",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "description": "movable and focusable windows",
   "author": "jwhenry3",
   "license": "MIT",
@@ -12,8 +12,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --css-modules true --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --css-modules true --format modern,cjs",
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
