@@ -184,7 +184,7 @@ class Panel extends Component<PanelProps, PanelState> {
   render() {
     if (!this.props.canDrag) {
       return <div ref={this.onRef}
-                  className={styles.panel + ' panel' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
+                  className={styles.panel + ' panel ' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
                   style={this.getStyle()}>
         <div className={styles['panel-container'] + ' panel-container'} onMouseDown={this.focus}>
           <div className={styles['panel-top'] + ' panel-top ' + (this.props.title ? 'title' : '')}>
@@ -200,7 +200,7 @@ class Panel extends Component<PanelProps, PanelState> {
       </div>
     }
     return <div ref={this.onRef}
-                className={styles.panel + ' panel' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
+                className={styles.panel + ' panel ' + (this.props.panelName || '') + (this.props.focused ? ' focused' : '')}
                 style={this.getStyle()}>
       <div className={styles['panel-container'] + ' panel-container'} onMouseDown={this.focus}>
         <div className={styles['panel-top'] + ' panel-top ' + (this.props.title ? 'title' : '')}
